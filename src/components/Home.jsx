@@ -13,19 +13,34 @@ const Home = () => {
             {/*<div className={styles.imgbox}>*/}
             {/*    <img src={imageName} />*/}
             {/*</div>*/}
-            <br />
-            <ul className={styles.list}>
-                <li>
-                    {/* Endpoint to route to Home component */}
-                    <Link to="/" className={styles.link} >Home</Link>
-                </li>
-                <li>
-                    {/* Endpoint to route to Contact Us component */}
-                    <Link to="/contactme" className={styles.link}>Contact Me</Link>
-                </li>
-            </ul>
+            <div className={styles.topBar}>
+                <ul>
+                    <li>
+                        {/* Endpoint to route to Home component */}
+                        <Link to="/" className={styles.link} >Home</Link>
+                    </li>
+                    <li>
+                        {/* Endpoint to route to Contact Us component */}
+                        <Link to="/contactme" className={styles.link}>About Me</Link>
+                    </li>
+                    <li>
+                        {/* Endpoint to route to Contact Us component */}
+                        <Link to="/skills" className={styles.link}>Skills</Link>
+                    </li>
+                    <li>
+                        {/* Endpoint to route to Contact Us component */}
+                        <Link to="/projects" className={styles.link}>Projects</Link>
+                    </li>
+                </ul>
+            </div>
 
-            <h1 className={styles.bigblue}>Hi! I am Kendrick Kwong</h1>
+            <div className={styles.nameContainer} >
+                <h1 className={styles.bigblue}>Hello! I am</h1>
+                <h1 className={styles.bold}>Kendrick</h1>
+                <h3>Third year Infromation Technology Student</h3>
+            </div>
+
+
 
             <div className={styles.iconContainer}>
 
