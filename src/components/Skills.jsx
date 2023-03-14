@@ -9,6 +9,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 const Skills = () => {
     const [good, setGoodNow] = useState(0)
     const [okay, setOkayNow] = useState(0)
+    const [elementry, setElementryNow] = useState(0)
 
     const updateGoodNowHandler = setInterval(() => {
         if (good >= 70 ){
@@ -26,19 +27,48 @@ const Skills = () => {
         setOkayNow(s => s+1)
     }, 50)
 
+    const updateElementryNowHandler = setInterval(() => {
+        if (okay >= 30 ){
+            setElementryNow(30)
+            clearInterval(updateElementryNowHandler)
+        }
+        setElementryNow(s => s+1)
+    }, 50)
+
     return (
         <div>
-            <h1>Skills Page</h1>
+            <div className={styles.topBar}>
+                <ul>
+                    <li>
+                        {/* Endpoint to route to Home component */}
+                        <Link to="/" className={styles.link} >Home</Link>
+                    </li>
+                    <li>
+                        {/* Endpoint to route to Contact Us component */}
+                        <Link to="/contactme" className={styles.link}>About Me</Link>
+                    </li>
+                    <li>
+                        {/* Endpoint to route to Contact Us component */}
+                        <Link to="/skills" className={styles.current}>Skills</Link>
+                    </li>
+                    <li>
+                        {/* Endpoint to route to Contact Us component */}
+                        <Link to="/projects" className={styles.link}>Projects</Link>
+                    </li>
+                </ul>
+            </div>
                 {/*<h1>Flat & Responsive Percentage Bars</h1>*/}
             <div className={styles.barContainer}>
-                <div className={styles.title}><span>Item 1</span></div>
-                <ProgressBar variant={"warning"} className={styles.bars}  now={good} />
-                <div className={styles.title}><span>Item 1</span></div>
-                <ProgressBar variant={"warning"} className={styles.bars} now={okay} />
-                <div className={styles.title}><span>Item 1</span></div>
-                <ProgressBar variant={"warning"} className={styles.bars} now={60} />
-                <div className={styles.title}><span>Item 1</span></div>
-                <ProgressBar variant={"warning"} className={styles.bars} now={80} />
+                <div className={styles.title}><span>C++</span></div>
+                <ProgressBar variant={"warning"} className={styles.bars}  now={good} label={"Good"}/>
+                <div className={styles.title}><span>C</span></div>
+                <ProgressBar variant={"warning"} className={styles.bars} now={okay} label={"Okay"} />
+                <div className={styles.title}><span>NodeJS</span></div>
+                <ProgressBar variant={"warning"} className={styles.bars} now={good} label={"Good"} />
+                <div className={styles.title}><span>Robot Framework</span></div>
+                <ProgressBar variant={"warning"} className={styles.bars} now={okay} label={"Okay"} />
+                <div className={styles.title}><span>React JS</span></div>
+                <ProgressBar variant={"warning"} className={styles.bars} now={elementry} label={"Elementry"} />
             </div>
         </div>
     );

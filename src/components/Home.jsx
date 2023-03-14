@@ -17,7 +17,7 @@ const Home = () => {
                 <ul>
                     <li>
                         {/* Endpoint to route to Home component */}
-                        <Link to="/" className={styles.link} >Home</Link>
+                        <Link to="/" className={styles.current} >Home</Link>
                     </li>
                     <li>
                         {/* Endpoint to route to Contact Us component */}
