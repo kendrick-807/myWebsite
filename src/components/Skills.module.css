@@ -7,13 +7,15 @@
     width: 1000px;
     margin-left: 600px;
     font-size: 30px;
-    font-family: Roboto;
-    font-weight: 400;
+    font-family: Kanit;
+    font-weight: 700;
     text-decoration: none;
     color: black;
     text-align: left;
     display: inline-block;
 }
+
+
 
 ul li{
     padding-left: 30px;

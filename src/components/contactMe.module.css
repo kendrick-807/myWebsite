@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+.topBar{
+    position: absolute;
+    top: 8px;
+    left: 700px;
+    width: 1000px;
+    margin-left: 600px;
+    font-size: 30px;
+    font-family: Kanit;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    display: inline-block;
+}
+
+.link{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+
+.current{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+    color: darkorange;
+}
+
+.link:hover {
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #54b3d6;;
+}
+
+ul li{
+    padding-left: 30px;
+    display: inline-block;
+
+}
+
+.textContainer{
+    position: absolute;
+    top:180px;
+    width: 1000px;
+    margin-left: 700px;
+}
+
+.aboutMe{
+    font-size: 40px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.header{
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+p{
+    padding-top: 25px;
+    font-size: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    transform: translateX(-200%);
+    opacity: 0;
+    animation: slide-in-anim 1.5s ease-out forwards;
+    padding-left: 500px;
+}
+
+.imgContainer{
+    width:auto;
+    text-align:center;
+    top:210px;
+    padding-left: 200px;
+    position: absolute;
+}
+
+.image{
+    background-image: url(../images/me.jpg) ;
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
+    /*position:absolute;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+    /*object-fit: cover;*/
+    /*background-attachment: fixed;*/
+
+}
+
+.barContainer{
+    position: absolute;
+    top: 180px;
+    margin-left: 1400px;
+    width: 450px;
+
+}
+
+.label{
+    font-size: 300px;
+}
+.bars {
+    background: #fff;
+    color: yellow;
+    display: block;
+    height: 1.5rem !important;
+    margin-bottom: 50px;
+    position: relative;
+    transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    -webkit-transition-property: width, background-color;
+    width: 100%;
+}
+
+@keyframes slide-in-anim {
+    20% {
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-45%);
+    }
+    75% {
+        transform: translateX(-52%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
