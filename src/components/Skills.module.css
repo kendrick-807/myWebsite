@@ -3,15 +3,14 @@
 .topBar{
     position: absolute;
     top: 8px;
-    left: 700px;
-    width: 1000px;
-    margin-left: 600px;
+    right:-530px;
+    width: 700px;
     font-size: 30px;
     font-family: Kanit;
     font-weight: 700;
     text-decoration: none;
     color: black;
-    text-align: left;
+    text-align: right;
     display: inline-block;
 }
 
@@ -71,4 +70,78 @@ ul li{
     -o-transition-property: width, background-color;
     -webkit-transition-property: width, background-color;
     width: 100%;
+}
+.container {
+    color: #e5e5e5;
+    font-size: 2rem;
+    text-transform: uppercase;
+    height:30vh;
+    padding-left:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -30vh;
+}
+
+.container p{
+    font-family: "Roboto";
+    font-size:35px;
+    font-weight: 700;
+    color: black;
+    margin-right: -15rem;
+}
+.animation {
+    font-weight: 700;
+    height:50px;
+    overflow:hidden;
+    margin-left: -1rem;
+
+}
+
+.animation > div > div {
+    padding: 0.25rem 0.5rem;
+    height:2.81rem;
+    margin-bottom: 3rem;
+    display:inline-block;
+}
+
+.animation div:first-child {
+    animation: text-animation 12s infinite;
+}
+
+.first div {
+    background-color:#20a7d8;
+}
+.second div {
+    background-color:#CD921E;
+}
+.third div {
+    background-color:#c10528;
+}
+.fourth div {
+    background-color:green;
+}
+.fifth div {
+    background-color:purple;
+}
+
+@keyframes text-animation {
+    0% {margin-top: 0;}
+    5% {margin-top: 0;}
+    10% {margin-top: -5.62rem;}
+    15% {margin-top: -5.62rem;}
+    20% {margin-top: -11.24rem;}
+    25% {margin-top: -11.24rem;}
+    30% {margin-top: -16.86rem;}
+    35% {margin-top: -16.86rem;}
+    40% {margin-top: -22.48rem;}
+    55% {margin-top: -22.48rem;}
+    60% {margin-top: -16.86rem;}
+    65% {margin-top: -16.86rem;}
+    70% {margin-top: -11.24rem;}
+    75% {margin-top: -11.24rem;}
+    80% {margin-top: -5.62rem;}
+    85% {margin-top: -5.62rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
 }

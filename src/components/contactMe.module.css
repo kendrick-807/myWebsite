@@ -2,15 +2,14 @@
 .topBar{
     position: absolute;
     top: 8px;
-    left: 700px;
-    width: 1000px;
-    margin-left: 600px;
+    right:-1900px;
+    width: 700px;
     font-size: 30px;
     font-family: Kanit;
     font-weight: 700;
     text-decoration: none;
     color: black;
-    text-align: left;
+    text-align: right;
     display: inline-block;
 }
 

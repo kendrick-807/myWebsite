@@ -57,7 +57,27 @@ const Skills = () => {
                     </li>
                 </ul>
             </div>
-                {/*<h1>Flat & Responsive Percentage Bars</h1>*/}
+            <div className={styles.container}>
+                <p>I'm familiar with</p>
+                <div className={styles.animation}>
+                    <div className={styles.first}>
+                        <div>C++</div>
+                    </div>
+                    <div className={styles.second}>
+                        <div>C</div>
+                    </div>
+                    <div className={styles.third}>
+                        <div>NodeJS</div>
+                    </div>
+                    <div className={styles.fourth}>
+                        <div>Robot Framework</div>
+                    </div>
+                    <div className={styles.fifth}>
+                        <div>ReactJS</div>
+                    </div>
+                </div>
+            </div>
+
             <div className={styles.barContainer}>
                 <div className={styles.title}><span>C++</span></div>
                 <ProgressBar variant={"warning"} className={styles.bars}  now={good} label={"Good"}/>
@@ -67,19 +87,14 @@ const Skills = () => {
                 <ProgressBar variant={"warning"} className={styles.bars} now={good} label={"Good"} />
                 <div className={styles.title}><span>Robot Framework</span></div>
                 <ProgressBar variant={"warning"} className={styles.bars} now={okay} label={"Okay"} />
-                <div className={styles.title}><span>React JS</span></div>
+                <div className={styles.title}><span>ReactJS</span></div>
                 <ProgressBar variant={"warning"} className={styles.bars} now={elementry} label={"Elementry"} />
             </div>
         </div>
     );
 };
 
-// function animate() {
-//     let bars =document.getElementsByClassName("percentage-bar");
-//     for(let i=0; i < bars.length; i++){
-//             bars[i].find('.bar').animate({width: bars[i].getAttribute('data-percent')},6000);
-//     }
-// }
+
 
 
 export default Skills;
