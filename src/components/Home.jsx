@@ -37,7 +37,7 @@ const Home = () => {
             <div className={styles.nameContainer} >
                 <h1 className={styles.bigblue}>Hello! I am</h1>
                 <h1 className={styles.bold}>Kendrick</h1>
-                <h3>Third year Infromation Technology Student</h3>
+                <h3>Fourth year Infromation Technology Student</h3>
             </div>
 
 
